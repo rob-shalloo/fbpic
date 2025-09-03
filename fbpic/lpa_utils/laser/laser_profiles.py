@@ -934,6 +934,8 @@ class FromLasyFileLaser( LaserProfile ):
                 "Unknown geometry for lasy file %s: %s" \
                 %(filename, dset.attrs['geometry'])
             )
+        
+        f.close()
 
 
     def define_thetaMode_interp_function(self, dset):
